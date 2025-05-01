@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Peyton Bush's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #2A2A2A; /* Warm gray background */
+            font-family: 'Exo 2', sans-serif;
+            overflow: hidden;
+        }
+
+        /* Intro screen */
+        .intro {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #5B1C1C; /* Soft crimson */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            animation: fadeOut 1s ease-in-out 1s forwards; /* Fade out after 3s */
+        }
+
+        .intro h1 {
+            font-size: 5em;
+            color: #E68A8A; /* Pale coral */
+            text-shadow: 0 0 10px rgba(230, 138, 138, 0.5); /* Subtle coral glow */
+            margin: 0;
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; display: none; }
+        }
+
+        /* Main content */
+        .container {
+            background: rgba(91, 28, 28, 0.9); /* Soft crimson, slightly opaque */
+            border: 1px solid #6AB0A3; /* Muted teal border */
+            border-radius: 8px;
+            padding: 60px;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(106, 176, 163, 0.3); /* Subtle teal glow */
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 4s forwards; /* Fade in after 4s */
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 0 0 5px rgba(230, 138, 138, 0.5); /* Subtle coral glow */
+            color: #E68A8A; /* Pale coral */
+        }
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            color: #D9D9D9; /* Light gray for contrast */
+            text-shadow: none;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 30px;
+            margin-top: 30px;
+            background-color: #3C3C3C; /* Neutral gray */
+            color: #E68A8A; /* Pale coral */
+            text-decoration: none;
+            border: 1px solid #6AB0A3; /* Muted teal */
+            border-radius: 4px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1.1em;
+        }
+
+        .button:hover {
+            background-color: #5B1C1C; /* Soft crimson on hover */
+            box-shadow: 0 0 10px rgba(106, 176, 163, 0.5); /* Muted teal glow */
+        }
+
+        /* Responsive design */
+        @media (max-width: 900px) {
+            .container {
+                padding: 40px;
+                max-width: 90%;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1.1em;
+            }
+
+            .intro h1 {
+                font-size: 3em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>hello</p>
+    <div class="intro">
+        <h1>Peyton Bush</h1>
+    </div>
+    <div class="container">
+        <h1>Peyton Bush</h1>
+        <p>
+            Hi! I'm Peyton Bush, I make lots of cool things and I've been getting into coding! Below you can either check my certifcations, and links to my Profiles!
+        </p>
+        <a href="#" class="button">Scan for Artifacts</a>
+    </div>
 </body>
 </html>
