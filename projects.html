@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metroid Prime: Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: #2A2A2A; /* Warm gray background */
+            font-family: 'Exo 2', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Navigation bar */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(91, 28, 28, 0.95); /* Soft crimson, slightly opaque */
+            border-bottom: 1px solid #6AB0A3; /* Muted teal border */
+            box-shadow: 0 2px 5px rgba(106, 176, 163, 0.2); /* Subtle teal glow */
+            z-index: 10;
+            padding: 15px 0;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .nav-links li a {
+            color: #E68A8A; /* Pale coral */
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            background-color: #5B1C1C; /* Soft crimson on hover */
+            box-shadow: 0 0 10px rgba(106, 176, 163, 0.5); /* Teal glow */
+        }
+
+        /* Main content */
+        .container {
+            background: rgba(91, 28, 28, 0.9); /* Soft crimson, slightly opaque */
+            border: 1px solid #6AB0A3; /* Muted teal border */
+            border-radius: 8px;
+            padding: 60px;
+            max-width: 800px;
+            min-height: 500px; /* Tall container */
+            box-shadow: 0 0 10px rgba(106, 176, 163, 0.3); /* Subtle teal glow */
+            margin: 80px auto 20px; /* Top margin for navbar */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            text-shadow: 0 0 5px rgba(230, 138, 138, 0.5); /* Subtle coral glow */
+            color: #E68A8A; /* Pale coral */
+        }
+
+        /* Projects section */
+        .projects {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .project-card {
+            background: rgba(60, 60, 60, 0.8); /* Dark neutral gray */
+            border: 1px solid #6AB0A3; /* Muted teal border */
+            border-radius: 4px;
+            padding: 20px;
+            color: #D9D9D9; /* Light gray text */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 0 10px rgba(106, 176, 163, 0.5); /* Teal glow on hover */
+        }
+
+        .project-title {
+            font-size: 1.8em;
+            color: #E68A8A; /* Pale coral */
+            text-shadow: 0 0 3px rgba(230, 138, 138, 0.3);
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #3C3C3C; /* Neutral gray */
+            color: #E68A8A; /* Pale coral */
+            text-decoration: none;
+            border: 1px solid #6AB0A3; /* Muted teal */
+            border-radius: 4px;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            font-size: 1.1em;
+            text-align: center;
+        }
+
+        .project-button:hover {
+            background-color: #5B1C1C; /* Soft crimson on hover */
+            box-shadow: 0 0 10px rgba(106, 176, 163, 0.5); /* Muted teal glow */
+        }
+
+        /* Responsive design */
+        @media (max-width: 900px) {
+            nav {
+                padding: 10px 0;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .nav-links li a {
+                font-size: 1em;
+                padding: 8px 15px;
+            }
+
+            .container {
+                padding: 40px;
+                max-width: 90%;
+                min-height: 400px;
+                margin-top: 120px; /* Adjust for taller navbar */
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .project-card {
+                padding: 15px;
+            }
+
+            .project-title {
+                font-size: 1.5em;
+            }
+
+            .project-description {
+                font-size: 1em;
+            }
+
+            .project-button {
+                font-size: 1em;
+                padding: 10px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="about.html">Tallon IV</a></li>
+            <li><a href="index.html">Archives</a></li>
+            <li><a href="socials.html">Socials</a></li>
+        </ul>
+    </nav>
+    <!-- Main content -->
+    <div class="container">
+        <h1>Metroid Prime: Projects</h1>
+        <!-- Projects section -->
+        <div class="projects">
+            <div class="project-card">
+                <h2 class="project-title">Books</h2>
+                <p class="project-description">
+                    Developed an enhanced Varia Suit module with improved Phazon resistance and thermal regulation. 
+                    Integrated Chozo technology for increased mobility and beam efficiency. 
+                    Successfully tested in Tallon IV’s Magmoor Caverns.
+                </p>
+                <a href="https://example.com/varia-suit" class="project-button">View Project</a>
+            </div>
+                <a href="https://example.com/artifact-scanner" class="project-button">View Project</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
